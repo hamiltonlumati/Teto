@@ -1,4 +1,4 @@
-CREATE TABLE users(
+/* CREATE TABLE users(
     ID INT NOT NULL UNIQUE,
     name CHARACTER VARYING,
     email CHARACTER VARYING UNIQUE,
@@ -19,4 +19,6 @@ create table Casa(
     dataCriada TIMESTAMP (3),
     Contacto INT,
     Preco money
-);
+); */
+ALTER TABLE users
+    add PASSWORD CHARACTER VARYING;
