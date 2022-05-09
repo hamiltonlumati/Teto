@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <title>Teto - LogIn</title>
 </head>
 <body class="bg-light pt-5" style="display: block; width:100%; heigth: 100%">
@@ -29,11 +31,11 @@
         <div class="card-body fs-6">
             <div class="mb-3">
                 <label for="email" class="form-label mx-auto">Email</label>
-                <input type="email" required="required" autofocus="autofocus" class="form-control" id="email" placeholder="nomedousuario@email.com">
+                <input type="email" required="required" autofocus="autofocus" class="form-control" id="email" placeholder="nomedousuario@email.com" name="email">
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" id="password" required="required" autocomplete="current-password"  class="form-control" id="formGroupExampleInput2">
+                <input type="password" id="password" required="required" autocomplete="current-password"  class="form-control" id="formGroupExampleInput2" name="password">
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1" name="remember" id="remember_me">
