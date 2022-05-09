@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,13 +17,14 @@
                 width: 100%;
                 text-align: center">TETO
     </h1>
-            <!-- Session Status -->
-            <x-auth-session-status class="mb-4" :status="session('status')" />
-
-            <!-- Validation Errors -->
-            <x-auth-validation-errors class="mb-4" :errors="$errors" />
     
     <form action="/login" method="POST" class="mx-auto px-auto card" style="width: 29rem;">
+                    <!-- Session Status -->
+                    <x-auth-session-status class="mb-4" :status="session('status')" />
+
+                    <!-- Validation Errors -->
+                    <x-auth-validation-errors class="mb-4" :errors="$errors" />
+        
         @csrf
         <div class="card-body fs-6">
             <div class="mb-3">
