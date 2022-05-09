@@ -15,7 +15,7 @@
     <h1 style="display: block;
                 width: 100%;
                 text-align: center">TETO</h1>
-    <form action="login" method="POST" class="mx-auto px-auto card" style="width: 26rem;">
+    <form action="/login" method="POST" class="mx-auto px-auto card" style="width: 26rem;">
         @csrf
         <div class="card-body fs-6">
             <div class="mb-3">
