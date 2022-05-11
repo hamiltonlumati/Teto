@@ -13,7 +13,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <title>Teto - LogIn</title>
 </head>
-<body class="bg-light pt-5" style="display: block; width:100%; heigth: 100%">
+<body class="bg-light pt-5 container" style="display: block; width:100%; heigth: 100%">
     <h1 style="display: block;
                 width: 100%;
                 text-align: center">TETO
