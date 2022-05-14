@@ -7,6 +7,6 @@
     <title>Teto</title>
 </head>
 <body>
-    
+    <x-header/>
 </body>
 </html>
